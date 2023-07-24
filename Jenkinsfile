@@ -8,9 +8,9 @@ pipeline {
         DOCKER_IMAGE = 'sip23bjit/sp04'
         REGISTRY = 'registry.hub.docker.com'
     }
-    triggers {
-        pollSCM 'H/5 * * * *'
-    }
+//    triggers {
+//        pollSCM 'H/5 * * * *'
+//    }
     stages {
         stage('Cloning Git') {
             steps {
